@@ -1,0 +1,51 @@
+/* Universal selector */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Custom variables */
+:root {
+    --primaryColor: black;
+    --secondaryColor: rgb(255, 255, 255);
+    --alternativeColor: hsla(147, 40%, 50%, .6);
+}
+body {
+    display: grid;
+    grid-template-rows: auto minmax(100%, 100vh) auto;
+}
+/* text-align: center */
+body > main, footer {
+    text-align: center
+}
+body > main {
+    background: var(--alternativeColor) url('../images/R.jpg') no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
+    background-blend-mode: hard-light;
+}
+/* header */
+.menu {
+    display: flex;
+    gap: 2rem;
+    padding-right: .5rem;
+}
+.menu li {
+    list-style: none;
+    align-self: center;
+}
+.menu li:nth-child(2) {
+    margin-left: auto;
+}
+
+/* footer */
+footer {
+    background-color: darkgray;
+}
+footer p {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 10px;
+}
