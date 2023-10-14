@@ -54,9 +54,6 @@ img[alt='logo'],
 #image-wrapper img  {
     aspect-ratio: 1/1;
 }
-img[alt='logo'] {
-    /* width: 5rem; */
-}
 .menu li {
     list-style: none;
     align-self: center;
@@ -85,4 +82,10 @@ footer p {
     font-weight: bolder;
     font-size: 1.5rem;
     padding: 10px;
+}
+/* Media query */
+@media screen and (width < 900px ){
+    img[alt='logo'] {
+        width: 5rem;
+    }
 }
